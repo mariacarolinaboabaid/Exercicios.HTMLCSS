@@ -1,0 +1,76 @@
+@charset "UTF-8";
+ /* FUNDO e GERAL*/ 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b80d65;
+}
+ /* MEU SITE */ 
+h1{
+    background-color: #F75BAB;
+    padding-left: 10px;
+    border: 10px solid white;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+}
+ /* ASSUNTOS e NOTÍCIAS */ 
+h2{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+ /* CAIXA DOS LINKS */ 
+nav{
+    background-color: #f75bac93;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 20px;
+}
+ /* LINKS */ 
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+a:visited{
+        color: darkblue;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+ /* CAIXA DOS SECTIONS*/ 
+section{
+    background-color: #eee9d942;
+    padding: 10px 20px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+}
+ /* CAIXA DOS ARTICLES */ 
+article{
+    font-weight: bold;
+    background-color: #E2B6B2;
+    border: 10px solid #E2B6B2;
+}
+/* PARÁGRAFO DENTRO DO ASIDE */
+aside > p{
+    background-color: #E2B6B2;
+    border: 10px solid #E2B6B2;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* PARÁGRAFO NORMAL */
+p{
+    font-weight: lighter;
+    text-align: justify;
+}
+/* PARÁGRAFO DO RODAPÉ */
+#rodape{
+    background-color: grey;
+    color: white;
+    font-size: 13px;
+    border: 10px solid grey;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+}

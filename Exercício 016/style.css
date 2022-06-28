@@ -1,0 +1,20 @@
+@charset "UTF-8"; 
+
+body {
+    background-color: indigo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+} 
+h1 {
+    color: pink;
+}
+h2 {
+    color: gainsboro;
+}
+p{
+    color: gainsboro;
+    text-align: justify;
+}
+a {
+    color: gainsboro;
+}
