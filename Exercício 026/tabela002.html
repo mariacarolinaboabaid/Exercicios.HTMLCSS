@@ -18,22 +18,37 @@
         }
         table{
             border-collapse: collapse;
-            text-align: center;
+            position: relative;
         }
-        th, td{
-            border: 3px solid black;
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #091540;
         }
-        td.num{
-            text-align: right;
+        th.col1{
+            text-align: left;
         }
         thead, tfoot{
             color: white;
             background-color: #091540;
-            height: 50px;
+            font-size: 14px;
+            height: 30px;
         }
-        tbody{
+        th, td{
+            border: 3px solid black;
+        }
+        tbody tr{
+            font-size: 12px;
             background-color: #ABD2FA;
-            height: 150px;
+        }
+        td.num{
+            text-align: right;
+        }
+        tbody td{
+            height: 40px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: whitesmoke;
         }
     </style>
 </head>
@@ -46,7 +61,7 @@
         <thead>
             <!--Linha do Head-->
             <tr>
-                <th scope="col" style="width: 300px">ESTADO</th>
+                <th class="col1" scope="col" style="width: 300px">ESTADO</th>
                 <th scope="col" style="width: 120px">POPULAÇÃO</th>
             </tr>
         </thead>
@@ -55,22 +70,144 @@
             <!--1º Linha do Body-->
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45.919.049</td>
+                <td class="num">46.649.132</td>
             </tr>
             <!--2º Linha do Body-->
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21.168.791</td>
+                <td class="num">21.411.923</td>
             </tr>
             <!--3º Linha do Body-->
+            <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">17.264.943</td>
+                <td class="num">17.463.349</td>
+            </tr>
+            <!--4º Linha do Body-->
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <!--5º Linha do Body-->
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <!--6º Linha do Body-->
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <!--7º Linha do Body-->
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+            <!--8º Linha do Body-->
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <!--9º Linha do Body-->
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.777.124</td>
+            </tr>
+            <!--10º Linha do Body-->
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+            <!--11º Linha do Body-->
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <!--12º Linha do Body-->
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.153.262</td>
+            </tr>
+            <!--13º Linha do Body-->
+            <tr>
+                <td>Amazonas/td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <!--14º Linha do Body-->
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+            <!--15º Linha do Body-->
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <!--16º Linha do Body-->
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.567.234</td>
+            </tr>
+            <!--17º Linha do Body-->
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.560.903</td>
+            </tr>
+            <!--18º Linha do Body-->
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.365.351</td>
+            </tr>
+            <!--19º Linha do Body-->
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.289.290</td>
+            </tr>
+            <!--20º Linha do Body-->
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <!--21º Linha do Body-->
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.839.188</td>
+            </tr>
+            <!--22º Linha do Body-->
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.338.474</td>
+            </tr>
+            <!--23º Linha do Body-->
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.815.278</td>
+            </tr>
+            <!--24º Linha do Body-->
+            <tr>
+                <td>Tocantis</td>
+                <td class="num">1.607.363</td>
+            </tr>
+            <!--25º Linha do Body-->
+            <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+            <!--26º Linha do Body-->
+            <tr>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+            </tr>
+            <!--27º Linha do Body-->
+            <tr>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr>
         </tbody>
-        <!--Linha do Body-->
+        <!--Linha do Foot-->
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</td>
-                <td class="num">84.235.783</td>
+                <th class="col1" scope="row">TOTAL DE HABITANTES</td>
+                <td class="num" style="color: yellow; font-weight: bold;">84.235.783</td>
             </tr>
         </tfoot>
     </table>
