@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Conteúdos</title>
+    <style>
+        body{
+            background-color: #413C58;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        h1, h2{
+            text-align: center;
+            margin: 50px 0px;
+            background-color: #00635D;
+            color: white;
+            padding: 15px 10px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        p{
+            line-height: 2em;
+            text-align: justify;
+            padding: 10px;
+        }
+        div#container{
+            position: relative;
+            background-color: #BFD7B5;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            border: 10px solid #BBB6DF;
+        }
+        iframe#video{
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        iframe.mapa{
+            display: block;
+            margin: auto;
+            width: 50vw;
+            height: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CONTEÚDOS DENTRO DE IFRAMES</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus animi dignissimos nulla numquam, ad in soluta corrupti provident eligendi atque dolore rerum corporis veritatis facilis. Soluta id est aspernatur laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae nihil illo ipsa alias iusto corporis, impedit aut doloremque dolore asperiores error sapiente necessitatibus delectus molestiae iure quaerat consequatur maiores.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus animi dignissimos nulla numquam, ad in soluta corrupti provident eligendi atque dolore rerum corporis veritatis facilis. Soluta id est aspernatur laborum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus animi dignissimos nulla numquam, ad in soluta corrupti provident eligendi atque dolore rerum corporis veritatis facilis. Soluta id est aspernatur laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo pariatur cumque dolore sunt omnis aspernatur, culpa voluptatem qui facere illum labore similique obcaecati veritatis dolores? Recusandae quod aliquam magni.</p>
+
+    <h2>VÍDEOS</h2>
+    <div id="container">
+        <iframe id="video"width="560" height="315" src="https://www.youtube.com/embed/X2lIovmNsUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>MAPAS DO GOOGLE</h2>
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9894359546147!2d-48.5680621849878!3d-27.593857128600877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952737f3a902cdc7%3A0x1aa7dec706ee183a!2sPonte%20Herc%C3%ADlio%20Luz!5e0!3m2!1spt-BR!2sbr!4v1657144461459!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>MAPAS DO WAZE</h2>
+    <iframe class="mapa" src="https://embed.waze.com/iframe?zoom=16&lat=-27.584480&lon=-48.544920&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+</body>
+</html>
